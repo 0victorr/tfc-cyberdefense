@@ -64,7 +64,7 @@ EC2 (iptables) → agente Wazuh (a través del túnel) → Wazuh DMZ
 
 ## 🚀 Instalación y configuración (resumen)
 
-La documentación completa se encuentra en la [memoria del proyecto]("ASIR_25-26 - Honeypot y Monitorización - Victor Rae.pdf"). A continuación se indican los pasos clave:
+La documentación completa se encuentra en la [memoria del proyecto](<ASIR_25-26 - Honeypot y Monitorización - Victor Rae.pdf>). A continuación se indican los pasos clave:
 
 ### 1. Virtualización con Proxmox
 - Crear bridges: `vmbr0` (WAN), `vmbr1` (LAN), `vmbr2` (DMZ).
