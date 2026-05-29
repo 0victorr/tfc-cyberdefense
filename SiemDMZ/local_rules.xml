@@ -1,0 +1,262 @@
+<group name="trapster,honeypot">
+
+  <!-- ============================================= -->
+  <!-- SSH -->
+  <!-- ============================================= -->
+  <rule id="100005" level="7">
+    <field name="logtype">ssh.connection</field>
+    <description>SSH connection attempt to honeypot</description>
+    <mitre>
+      <id>T1595</id>
+      <id>T1046</id>
+      <id>T1021</id>
+    </mitre>
+  </rule>
+
+  <rule id="100006" level="10">
+    <field name="logtype">ssh.login</field>
+    <description>SSH login attempt on honeypot</description>
+    <mitre>
+      <id>T1021</id>
+      <id>T1110</id>
+    </mitre>
+  </rule>
+
+  <!-- ============================================= -->
+  <!-- FTP -->
+  <!-- ============================================= -->
+  <rule id="100010" level="7">
+    <field name="logtype">ftp.connection</field>
+    <description>FTP connection attempt to honeypot</description>
+    <mitre>
+      <id>T1595</id>
+      <id>T1046</id>
+    </mitre>
+  </rule>
+
+  <rule id="100011" level="10">
+    <field name="logtype">ftp.login</field>
+    <description>FTP login attempt on honeypot</description>
+    <mitre>
+      <id>T1021</id>
+      <id>T1110</id>
+    </mitre>
+  </rule>
+
+  <!-- ============================================= -->
+  <!-- RDP -->
+  <!-- ============================================= -->
+  <rule id="100020" level="7">
+    <field name="logtype">rdp.connection</field>
+    <description>RDP connection attempt to honeypot</description>
+    <mitre>
+      <id>T1595</id>
+      <id>T1046</id>
+      <id>T1021</id>
+    </mitre>
+  </rule>
+
+  <rule id="100021" level="10">
+    <field name="logtype">rdp.login</field>
+    <description>RDP login attempt on honeypot</description>
+    <mitre>
+      <id>T1021</id>
+      <id>T1110</id>
+    </mitre>
+  </rule>
+
+  <!-- ============================================= -->
+  <!-- HTTP -->
+  <!-- ============================================= -->
+  <rule id="100030" level="7">
+    <field name="logtype">http.query</field>
+    <description>HTTP request to honeypot web service</description>
+    <mitre>
+      <id>T1595</id>
+      <id>T1046</id>
+    </mitre>
+  </rule>
+
+  <!-- ============================================= -->
+  <!-- HTTPS -->
+  <!-- ============================================= -->
+  <rule id="100032" level="7">
+    <field name="logtype">https.connection</field>
+    <description>HTTPS connection attempt to honeypot</description>
+    <mitre>
+      <id>T1595</id>
+      <id>T1046</id>
+    </mitre>
+  </rule>
+
+  <rule id="100033" level="10">
+    <field name="logtype">https.login</field>
+    <description>HTTPS login attempt on honeypot</description>
+    <mitre>
+      <id>T1021</id>
+      <id>T1110</id>
+    </mitre>
+  </rule>
+
+  <!-- ============================================= -->
+  <!-- TELNET -->
+  <!-- ============================================= -->
+  <rule id="100040" level="7">
+    <field name="logtype">telnet.connection</field>
+    <description>Telnet connection attempt to honeypot</description>
+    <mitre>
+      <id>T1595</id>
+      <id>T1046</id>
+      <id>T1021</id>
+    </mitre>
+  </rule>
+
+  <rule id="100041" level="10">
+    <field name="logtype">telnet.login</field>
+    <description>Telnet login attempt on honeypot</description>
+    <mitre>
+      <id>T1021</id>
+      <id>T1110</id>
+    </mitre>
+  </rule>
+
+  <!-- ============================================= -->
+  <!-- LDAP -->
+  <!-- ============================================= -->
+  <rule id="100050" level="7">
+    <field name="logtype">ldap.connection</field>
+    <description>LDAP connection attempt to honeypot</description>
+    <mitre>
+      <id>T1595</id>
+      <id>T1046</id>
+    </mitre>
+  </rule>
+
+  <rule id="100051" level="8">
+    <field name="logtype">ldap.query</field>
+    <description>LDAP enumeration attempt</description>
+    <mitre>
+      <id>T1087</id>
+      <id>T1018</id>
+    </mitre>
+  </rule>
+
+  <!-- ============================================= -->
+  <!-- MySQL -->
+  <!-- ============================================= -->
+  <rule id="100060" level="7">
+    <field name="logtype">mysql.connection</field>
+    <description>MySQL connection attempt to honeypot</description>
+    <mitre>
+      <id>T1595</id>
+      <id>T1046</id>
+      <id>T1021</id>
+    </mitre>
+  </rule>
+
+  <!-- ============================================= -->
+  <!-- MSSQL -->
+  <!-- ============================================= -->
+  <rule id="100070" level="7">
+    <field name="logtype">mssql.connection</field>
+    <description>MSSQL connection attempt to honeypot</description>
+    <mitre>
+      <id>T1595</id>
+      <id>T1046</id>
+      <id>T1021</id>
+    </mitre>
+  </rule>
+
+  <!-- ============================================= -->
+  <!-- VNC -->
+  <!-- ============================================= -->
+  <rule id="100080" level="7">
+    <field name="logtype">vnc.connection</field>
+    <description>VNC connection attempt to honeypot</description>
+    <mitre>
+      <id>T1595</id>
+      <id>T1046</id>
+      <id>T1021</id>
+    </mitre>
+  </rule>
+
+  <!-- ============================================= -->
+  <!-- DNS -->
+  <!-- ============================================= -->
+  <rule id="100090" level="6">
+    <field name="logtype">dns.query</field>
+    <description>DNS query to honeypot</description>
+    <mitre>
+      <id>T1046</id>
+      <id>T1590</id>
+      <id>T1595</id>
+    </mitre>
+  </rule>
+
+  <!-- ============================================= -->
+  <!-- RSYNC -->
+  <!-- ============================================= -->
+  <rule id="100100" level="7">
+    <field name="logtype">rsync.connection</field>
+    <description>Rsync connection attempt to honeypot</description>
+    <mitre>
+      <id>T1595</id>
+      <id>T1046</id>
+    </mitre>
+  </rule>
+
+  <!-- ============================================= -->
+  <!-- BRUTE FORCE GLOBAL -->
+  <!-- ============================================= -->
+  <rule id="100999" level="12" frequency="5" timeframe="10">
+    <if_matched_group>trapster</if_matched_group>
+    <same_field>src_ip</same_field>
+    <description>Multiple honeypot attacks from same IP</description>
+    <mitre>
+      <id>T1595</id>
+      <id>T1110</id>
+      <id>T1021</id>
+    </mitre>
+  </rule>
+
+</group>
+
+
+<!-- ============================================= -->
+<!-- EC2 IPTABLES LOGGING -->
+<!-- ============================================= -->
+
+<group name="attack,iptables,">
+
+  <rule id="140010" level="6">
+    <if_sid>4100</if_sid>
+    <match>IPTables-Attack-Log</match>
+    <description>BASE: External connection attempt detected on EC2 from $(srcip)</description>
+    <mitre>
+      <id>T1595</id>
+      <id>T1046</id>
+    </mitre>
+  </rule>
+
+  <rule id="140015" level="8" frequency="2" timeframe="2">
+    <if_matched_sid>140010</if_matched_sid>
+    <same_source_ip />
+    <description>External connection attempt detected on EC2 from $(srcip)</description>
+    <mitre>
+      <id>T1595</id>
+      <id>T1046</id>
+    </mitre>
+  </rule>
+
+  <rule id="140030" level="12" frequency="5" timeframe="30">
+    <if_matched_sid>140015</if_matched_sid>
+    <same_source_ip />
+    <description>Repeated external probing detected from $(srcip)</description>
+    <mitre>
+      <id>T1595</id>
+      <id>T1046</id>
+      <id>T1110</id>
+    </mitre>
+  </rule>
+
+</group>
