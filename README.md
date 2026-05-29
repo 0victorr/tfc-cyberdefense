@@ -28,7 +28,6 @@ El proyecto demuestra que **con herramientas open source y una planificación ad
 ## 🏗️ Arquitectura
 
 ![Esquema de red](docs/network_diagram.png)  
-*(Añade aquí tu diagrama de red – Diagrama 3)*
 
 | Zona | Componentes | Función |
 |------|-------------|---------|
