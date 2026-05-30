@@ -52,12 +52,12 @@ EC2 (iptables) → agente Wazuh (a través del túnel) → Wazuh DMZ
 | **Proxmox VE** | 9.1 | Hipervisor para todas las máquinas virtuales |
 | **OPNsense** | 26.1 | Firewall, router y VPN (WireGuard) |
 | **Wazuh** | 4.14 | SIEM (manager, indexer, dashboard) |
-| **Trapster** | latest | Honeypot ligero (Docker) |
+| **Trapster** | 1.1.8 | Honeypot ligero (Docker) |
 | **WireGuard** | 1.0+ | Túnel VPN entre EC2 y OPNsense |
 | **FreeIPA** | 4.13 | Gestión centralizada de identidades (LDAP, Kerberos) |
-| **Rocky Linux** | 9 | Sistema base para FreeIPA |
-| **Linux Mint** | 22.x | Estación de trabajo integrada en el dominio |
-| **Debian** | 13 | Sistemas base para honeypot y Wazuh |
+| **Rocky Linux** | 9.7 | Sistema base para FreeIPA |
+| **Linux Mint** | 22.2 | Estación de trabajo integrada en el dominio |
+| **Debian** | 13.3 | Sistemas base para honeypot y Wazuh |
 | **AWS EC2** | t3.large | Instancia en la nube con IP elástica |
 
 ---
