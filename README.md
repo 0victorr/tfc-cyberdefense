@@ -21,7 +21,7 @@ Este proyecto despliega una **infraestructura completa de ciberseguridad** basad
 - 👥 **Autenticación centralizada** con FreeIPA en la LAN, integrando una estación de trabajo Linux Mint en el dominio.
 - 📈 **Dashboard personalizado** en Wazuh con tabla de IPs atacantes, mapa de coordenadas y evolución temporal de los ataques.
 
-El proyecto demuestra que **con herramientas open source y una planificación adecuada se puede construir un SOC profesional de bajo coste**, capaz de detectar amenazas reales y proporcionar inteligencia de adversarios.
+El proyecto demuestra que **con herramientas open source y una planificación adecuada se puede construir una plataforma de monitorización de bajo coste**, capaz de detectar amenazas reales y proporcionar inteligencia de adversarios.
 
 ---
 
